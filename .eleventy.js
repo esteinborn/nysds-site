@@ -62,7 +62,6 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy("./src/assets/js/");
     eleventyConfig.addPassthroughCopy("./src/robots.txt"); 
     eleventyConfig.addPassthroughCopy("./src/favicon.svg"); 
-    eleventyConfig.addPassthroughCopy("./CNAME");
     eleventyConfig.addPassthroughCopy("./src/admin/");
 
     eleventyConfig.on('eleventy.after', () => {
