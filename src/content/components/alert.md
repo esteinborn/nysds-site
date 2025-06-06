@@ -2,14 +2,14 @@
 image_alt: An illustration of an alert message.
 permalink: /components/alert/
 navOrder: 2
-title: Alert Foo
-date: 2025-06-06T15:29:00.000Z
 thumbnail: /images/uploads/2x-819x227_office_hours-header_v2.jpg
+date: 2025-06-06T15:29:00.000Z
 props: asdf
 image_header: /assets/img/components/alert-header.svg
-image: /assets/img/components/alert.svg
+title: Alert Foo
 description: An alert displays a prominent message, with optional links, at the
   top of the screen.
+image: /images/uploads/2x-819x227_office_hours-header_v2.jpg
 rating: 1
 ---
 
