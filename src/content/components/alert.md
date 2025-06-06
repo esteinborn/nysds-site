@@ -3,6 +3,10 @@ image_alt: An illustration of an alert message.
 permalink: /components/alert/
 navOrder: 2
 thumbnail: /images/uploads/2x-819x227_office_hours-header_v2.jpg
+code:
+  code: |-
+    Code goes here
+    <nys-alert>
 date: 2025-06-06T15:29:00.000Z
 props: asdf
 image_header: /assets/img/components/alert-header.svg
