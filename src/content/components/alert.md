@@ -9,7 +9,7 @@ image_header: /assets/img/components/alert-header.svg
 title: Alert Foo
 description: An alert displays a prominent message, with optional links, at the
   top of the screen.
-image: /images/uploads/2x-819x227_office_hours-header_v2.jpg
+image: /images/uploads/screenshot-2025-05-29-at-11.05.01 am.png
 rating: 1
 ---
 
