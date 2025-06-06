@@ -6,3 +6,4 @@ rating: 1
 props: asdf
 ---
 asdf
+`<nys-alert>`
