@@ -1,11 +1,16 @@
 ---
-permalink: /components/alert/
-title: Alert
-description: An alert displays a prominent message, with optional links, at the top of the screen.
-image: /assets/img/components/alert.svg
 image_alt: An illustration of an alert message.
-image_header: /assets/img/components/alert-header.svg
+permalink: /components/alert/
 navOrder: 2
+title: Alert Foo
+date: 2025-06-06T15:29:00.000Z
+thumbnail: /images/uploads/2x-819x227_office_hours-header_v2.jpg
+props: asdf
+image_header: /assets/img/components/alert-header.svg
+image: /assets/img/components/alert.svg
+description: An alert displays a prominent message, with optional links, at the
+  top of the screen.
+rating: 1
 ---
 
 {% extends "layouts/component.njk" %}
