@@ -6,10 +6,10 @@ thumbnail: /images/uploads/2x-819x227_office_hours-header_v2.jpg
 date: 2025-06-06T15:29:00.000Z
 props: asdf
 image_header: /assets/img/components/alert-header.svg
-title: Alert Foo
+title: Alert Food
 description: An alert displays a prominent message, with optional links, at the
   top of the screen.
-image: /images/uploads/screenshot-2025-05-29-at-11.05.01 am.png
+image: /images/uploads/image-2-.png
 rating: 1
 ---
 
