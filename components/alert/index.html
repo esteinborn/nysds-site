@@ -35,7 +35,7 @@
     <meta name="robots" content="noindex">
     
     
-    <!-- Latest Build: 2025-06-09T13:05:08.796+00:00 -->
+    <!-- Latest Build: 2025-06-09T13:08:40.840+00:00 -->
   </head>
   
   <body class="single-page page-alert section-components">
@@ -333,8 +333,12 @@
 </script>
   </aside>
   <div class="nys-desktop:nys-grid-col-8">  
-    <p>Alert banners are designed to display critical information, updates, or warnings that require the user's attention.</p>
+    <p><section id="overview">
+<h1>Alert Foods</h1></p>
+<p>Alert banners are designed to display critical information, updates, or warnings that require the user's attention.</p>
 <p>The <code class="language-js">&lt;nys-alert&gt;</code> component is a banner-like component that appears at the top of a screen to prominently display important information, along with optional links. Alerts keep users informed of important and sometimes time-sensitive changes.</p>
+</section>
+    <section id="example">
   <div class="code-preview-container">
   <div class="code-preview__preview ">
 <div class="code-preview__preview-root-inner"><nys-alert
@@ -404,112 +408,10 @@
   </div>
   </div>
 </div>
-<h3>When to use this component</h3>
-<ul>
-<li>Use <code class="language-js">&lt;nys-alert&gt;</code> to communicate important, time-sensitive information to users in a visually prominent way.</li>
-<li>Ideal for messages such as success notifications, danger alerts, warnings, or informational updates.</li>
-<li>Use for dismissible or temporary alerts when the message is not critical to user workflow.</li>
-</ul>
-<h3>When to consider something else</h3>
-<ul>
-<li>
-<p>If the information is not time-sensitive or critical, consider using an inline message.</p>
-</li>
-<li>
-<p>Avoid using alerts for repetitive or non-actionable content that could frustrate users.</p>
-</li>
-<li>
-<p>Keep the alert content concise and focused on the message.</p>
-</li>
-<li>
-<p>Use the default icon alert icon, displayed on the left, unless you need to communicate critical information visually such as a pandemic or widespread power outage.</p>
-</li>
-<li>
-<p>Make alerts dismissible unless they contain critical information or an important step users need to take.</p>
-</li>
-<li>
-<p>Limit alerts to one per page; if more than one alert is needed, prefer Base alerts if possible to not overwhelm users.</p>
-</li>
-<li>
-<p>Use Success type to confirm a positive system status to users such as saving a form.</p>
-</li>
-<li>
-<p>Use Danger type to display system status error messages.</p>
-</li>
-<li>
-<p>Only use Emergency type for actual emergencies such as a mission person, weather, or power outage; consider switching the left icon to a relevant icon if one exists.</p>
-</li>
-<li>
-<p>[Dev] Use the appropriate <code class="language-js">theme</code> (e.g., <code class="language-js">info</code>, <code class="language-js">success</code>, <code class="language-js">warning</code>, or <code class="language-js">danger</code>) to match the intent of the alert.</p>
-</li>
-<li>
-<p>[Dev] Use the <code class="language-js">dismissible</code> property for non-critical alerts, allowing users to clear them from the screen.</p>
-</li>
-<li>
-<p>Don't remove the left icon; the icon is required for accessibility.</p>
-</li>
-<li>
-<p>Do not use an alert to call attention to what a user needs to do in a screen instead of making the action clear in the screen itself.</p>
-</li>
-<li>
-<p>Do not use error messages to communicate form field validation issues; use field error states instead.</p>
-</li>
-<li>
-<p>Don't include more than two link actions in an alert.</p>
-</li>
-<li>
-<p>Don't overuse alerts for non-critical information, as this can desensitize users to important messages.</p>
-</li>
-<li>
-<p>Don't use alerts as toasts. alerts should be placed directly on the page at the top of the screen content.</p>
-</li>
-<li>
-<p>Don't add any shadows to alerts.</p>
-</li>
-</ul>
-</ul>
-<p>The <code class="language-js">&lt;nys-alert&gt;</code> component includes the following accessibility-focused features:</p>
-<ul>
-<li>Users with colorblindness use the alert's icon to differentiate the alert type; for accessibility it is best to use the default icon.</li>
-<li>Keyboard navigation support, allowing users to use voiceover to read the alert using the keyboard.</li>
-<li>Visual focus indicators to help users navigate the component.</li>
-<li>Each alert theme contains an ARIA role attribute that can notify assistive technologies of time-sensitive and important messages.</li>
-</ul>
-<table>
-  <thead>
-    <tr>
-      <th><strong>ARIA Role</strong></th>
-      <th><strong>Attribute</strong></th>
-      <th><strong>Use Case</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-js">role="alert"</code></td>
-      <td>Important messages that demand the user's immediate attention.</td>
-      <td>Example: Danger and Emergency alert</td>
-    </tr>
-    <tr>
-      <td><code class="language-js">role="status"</code></td>
-      <td>
-        Messages that provide advisory information but do not have the same
-        urgency as alerts.
-      </td>
-      <td>Example: Success alert</td>
-    </tr>
-    <tr>
-      <td><code class="language-js">role="region"</code></td>
-      <td>
-        Messages that provide information the user would want to be able to
-        easily find, but are not important enough to interrupt user workflow.
-      </td>
-      <td>
-        Information and Warning alert (An
-        <code class="language-js">aria-label</code>will be added for this role.)
-      </td>
-    </tr>
-  </tbody>
-</table>
+</section>
+    <br>
+    <section id="options">
+      <h2>Options</h2>
 <h3>Custom text description</h3>
 <p>Add descriptive content to your alert using the <code class="language-js">text</code> prop or the our slot feature.</p>
 <p>Use the <code class="language-js">text</code> prop for simple texts, or leverage the slot by simply putting HTML elements within our component for advanced HTML customizations, such as links or styled texts.</p>
@@ -656,6 +558,104 @@
     </div>
   </div>
 </div>
+</section>
+    <br>
+    <section id="usage">
+      <h2>Usage</h2>
+<h3>When to use this component</h3>
+<ul>
+<li>Use <code class="language-js">&lt;nys-alert&gt;</code> to communicate important, time-sensitive information to users in a visually prominent way.</li>
+<li>Ideal for messages such as success notifications, danger alerts, warnings, or informational updates.</li>
+<li>Use for dismissible or temporary alerts when the message is not critical to user workflow.</li>
+</ul>
+<h3>When to consider something else</h3>
+<ul>
+<li>If the information is not time-sensitive or critical, consider using an inline message.</li>
+<li>Avoid using alerts for repetitive or non-actionable content that could frustrate users.</li>
+</ul>
+</section>
+    <div class="nys-grid-row nys-grid-gap">
+      <div class="nys-tablet:nys-grid-col-6 nys-display-flex">
+        <div class="card card--do nys-flex-fill">
+          <h3 class="card__title"><nys-icon name="check_circle" size="lg"></nys-icon> Do</h3>
+<ul>
+<li>Keep the alert content concise and focused on the message.</li>
+<li>Use the default icon alert icon, displayed on the left, unless you need to communicate critical information visually such as a pandemic or widespread power outage.</li>
+<li>Make alerts dismissible unless they contain critical information or an important step users need to take.</li>
+<li>Limit alerts to one per page; if more than one alert is needed, prefer Base alerts if possible to not overwhelm users.</li>
+<li>Use Success type to confirm a positive system status to users such as saving a form.</li>
+<li>Use Danger type to display system status error messages.</li>
+<li>Only use Emergency type for actual emergencies such as a mission person, weather, or power outage; consider switching the left icon to a relevant icon if one exists.</li>
+<li>[Dev] Use the appropriate <code class="language-js">theme</code> (e.g., <code class="language-js">info</code>, <code class="language-js">success</code>, <code class="language-js">warning</code>, or <code class="language-js">danger</code>) to match the intent of the alert.</li>
+<li>[Dev] Use the <code class="language-js">dismissible</code> property for non-critical alerts, allowing users to clear them from the screen.</li>
+</ul>
+</div>
+      </div>
+      <div class="nys-tablet:nys-grid-col-6 nys-display-flex">
+        <div class="card card--dont nys-flex-fill">
+          <h3 class="card__title"><nys-icon name="warning" size="lg"></nys-icon> Don't</h3>
+<ul>
+<li>Don't remove the left icon; the icon is required for accessibility.</li>
+<li>Do not use an alert to call attention to what a user needs to do in a screen instead of making the action clear in the screen itself.</li>
+<li>Do not use error messages to communicate form field validation issues; use field error states instead.</li>
+<li>Don't include more than two link actions in an alert.</li>
+<li>Don't overuse alerts for non-critical information, as this can desensitize users to important messages.</li>
+<li>Don't use alerts as toasts. alerts should be placed directly on the page at the top of the screen content.</li>
+<li>Don't add any shadows to alerts.</li>
+</ul>
+</ul>
+</div>
+      </div>
+    </div>
+    <br>
+    <section id="accessibility">
+      <h2>Accessibility</h2>
+<p>The <code class="language-js">&lt;nys-alert&gt;</code> component includes the following accessibility-focused features:</p>
+<ul>
+<li>Users with colorblindness use the alert's icon to differentiate the alert type; for accessibility it is best to use the default icon.</li>
+<li>Keyboard navigation support, allowing users to use voiceover to read the alert using the keyboard.</li>
+<li>Visual focus indicators to help users navigate the component.</li>
+<li>Each alert theme contains an ARIA role attribute that can notify assistive technologies of time-sensitive and important messages.</li>
+</ul>
+<table>
+  <thead>
+    <tr>
+      <th><strong>ARIA Role</strong></th>
+      <th><strong>Attribute</strong></th>
+      <th><strong>Use Case</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-js">role="alert"</code></td>
+      <td>Important messages that demand the user's immediate attention.</td>
+      <td>Example: Danger and Emergency alert</td>
+    </tr>
+    <tr>
+      <td><code class="language-js">role="status"</code></td>
+      <td>
+        Messages that provide advisory information but do not have the same
+        urgency as alerts.
+      </td>
+      <td>Example: Success alert</td>
+    </tr>
+    <tr>
+      <td><code class="language-js">role="region"</code></td>
+      <td>
+        Messages that provide information the user would want to be able to
+        easily find, but are not important enough to interrupt user workflow.
+      </td>
+      <td>
+        Information and Warning alert (An
+        <code class="language-js">aria-label</code>will be added for this role.)
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section>
+    <br>
+    <section id="properties">
+      <h2>Properties</h2>
 <table>
   <thead>
     <tr>
@@ -698,21 +698,28 @@
     </tr>
   </tbody>
 </table>
-<p>[[TODO]]</p>
-<table>
-  <thead>
-    <tr>
-      <th>Variable</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>--nys-toggle-width</code></td>
-      <td>Width of the toggle switch.</td>
-    </tr>
-  </tbody>
-  </table>
+</section>
+    <br>
+    <section id="cssvariables">
+      <h2>CSS Variables</h2>
+</section>
+    <br>
+    <section id="events">
+      <h2>Events</h2>
+</section>
+    <section class="nys-section">
+  <h2>Suggest a New Component</h2>
+  <div class="nys-grid-row nys-grid-gap">
+    <div class="nys-tablet:nys-grid-col-8">
+      <p>
+        Do you have an idea for a new NYSDS web component? Look through the existing proposals in our GitHub discussions board to see if someone already proposed something similar. If not, feel free to submit one.
+      </p>
+    </div>
+    <div class="nys-tablet:nys-grid-col-4">
+      <nys-button fullWidth label="Review Component Proposals" href="https://github.com/ITS-HCD/nysds/discussions/categories/component-proposals"></nys-button>
+    </div>
+  </div>
+</section>
 
   </div>
   <aside class="nys-desktop:nys-grid-col-2">
