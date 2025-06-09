@@ -10,14 +10,14 @@ code:
 date: 2025-06-06T15:29:00.000Z
 props: asdf
 image_header: /assets/img/components/alert-header.svg
-title: Alert Foods
+title: Alert Food-no-layout
 description: An alert displays a prominent message, with optional links, at the
   top of the screen.
 image: /images/uploads/image-2-.png
 rating: 1
 ---
 
-{% extends "layouts/component.njk" %}
+
 
 
 {% block longdescription %}
