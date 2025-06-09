@@ -1,32 +1,50 @@
 ---
 image_alt: An illustration of an alert message.
+templateEngineOverride: njk,md
+layout: layouts/component.njk
+title: Alert
 permalink: /components/alert/
-navOrder: 2
-thumbnail: /images/uploads/2x-819x227_office_hours-header_v2.jpg
-code:
-  code: |-
-    Code goes here
-    <nys-alert>
-date: 2025-06-06T15:29:00.000Z
-props: asdf
-image_header: /assets/img/components/alert-header.svg
-title: Alert Food-no-layout
 description: An alert displays a prominent message, with optional links, at the
   top of the screen.
-image: /images/uploads/image-2-.png
-rating: 1
+long_description: >-
+  Alert banners are designed to display critical information, updates, or
+  warnings that require the user's attention.
+
+
+  The `<nys-alert>` component is a banner-like component that appears at the top of a screen to prominently display important information, along with optional links. Alerts keep users informed of important and sometimes time-sensitive changes.
+navOrder: 2
+image: /assets/img/components/alert.svg
+code:
+  code: cads
+do: >-
+  <ul>
+
+  <li>Keep the alert content concise and focused on the message.</li>
+
+  <li>Use the default icon alert icon, displayed on the left, unless you need to communicate critical information visually such as a pandemic or widespread power outage.</li>
+
+  </ul>
+image_header: /assets/img/components/alert-header.svg
+dont: >-
+  + Don't `remove` the left icon; the icon is required for accessibility.
+
+  + Do not use an alert to call attention to what a user needs to do in a screen instead of making the action clear in the screen itself.
+
+  * Do not use error messages to communicate form field validation issues; use field error states instead.
+
+  * Don't include more than two link actions in an alert.
+
+  * Don't overuse alerts for non-critical information, as this can desensitize users to important messages.
+
+  * Don't use alerts as toasts. alerts should be placed directly on the page at the top of the screen content.
+
+  * Don't add any shadows to alerts.
 ---
 
-
-
-
-{% block longdescription %}
 
 Alert banners are designed to display critical information, updates, or warnings that require the user's attention.
 
 The <code class="language-js">&lt;nys-alert&gt;</code> component is a banner-like component that appears at the top of a screen to prominently display important information, along with optional links. Alerts keep users informed of important and sometimes time-sensitive changes.
-{% endblock %}
-
 {% block example %}
   {% set preview %}<nys-alert
   type="base"
@@ -85,13 +103,13 @@ The <code class="language-js">&lt;nys-alert&gt;</code> component is a banner-lik
 
 {% block usage %}
 
-### When to use this component
+## When to use this component
 
   - Use <code class="language-js">&lt;nys-alert&gt;</code> to communicate important, time-sensitive information to users in a visually prominent way.
   - Ideal for messages such as success notifications, danger alerts, warnings, or informational updates.
   - Use for dismissible or temporary alerts when the message is not critical to user workflow.
 
-### When to consider something else
+## When to consider something else
 
   - If the information is not time-sensitive or critical, consider using an inline message.
   - Avoid using alerts for repetitive or non-actionable content that could frustrate users.
@@ -100,27 +118,12 @@ The <code class="language-js">&lt;nys-alert&gt;</code> component is a banner-lik
 
 {% block usagedo %}
 
-  - Keep the alert content concise and focused on the message.
-  - Use the default icon alert icon, displayed on the left, unless you need to communicate critical information visually such as a pandemic or widespread power outage.
-  - Make alerts dismissible unless they contain critical information or an important step users need to take.
-  - Limit alerts to one per page; if more than one alert is needed, prefer Base alerts if possible to not overwhelm users.
-  - Use Success type to confirm a positive system status to users such as saving a form.
-  - Use Danger type to display system status error messages.
-  - Only use Emergency type for actual emergencies such as a mission person, weather, or power outage; consider switching the left icon to a relevant icon if one exists.
-  - [Dev] Use the appropriate <code class="language-js">theme</code> (e.g., <code class="language-js">info</code>, <code class="language-js">success</code>, <code class="language-js">warning</code>, or <code class="language-js">danger</code>) to match the intent of the alert.
-  - [Dev] Use the <code class="language-js">dismissible</code> property for non-critical alerts, allowing users to clear them from the screen.
+
 {% endblock %}
 
 {% block usagedont %}
 
-- Don't remove the left icon; the icon is required for accessibility.
-- Do not use an alert to call attention to what a user needs to do in a screen instead of making the action clear in the screen itself.
-- Do not use error messages to communicate form field validation issues; use field error states instead.
-- Don't include more than two link actions in an alert.
-- Don't overuse alerts for non-critical information, as this can desensitize users to important messages.
-- Don't use alerts as toasts. alerts should be placed directly on the page at the top of the screen content.
-- Don't add any shadows to alerts.
-</ul>
+
 {% endblock %}
 
 {% block accessibility %}
@@ -172,7 +175,7 @@ The <code class="language-js">&lt;nys-alert&gt;</code> component includes the fo
 
 {% block options %}
 
-### Custom text description
+## Custom text description
 Add descriptive content to your alert using the <code class="language-js">text</code> prop or the our slot feature. 
 
 Use the <code class="language-js">text</code> prop for simple texts, or leverage the slot by simply putting HTML elements within our component for advanced HTML customizations, such as links or styled texts.
@@ -184,7 +187,7 @@ Use the <code class="language-js">text</code> prop for simple texts, or leverage
   {% set code = preview %}
   {% include "partials/code-preview.njk" %}
 
-### Dismissible
+## Dismissible
 
 Use the <code class="language-js">dismissible</code> property to make the alert dismissible.
 

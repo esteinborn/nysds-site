@@ -6,8 +6,9 @@
   <aside class="nys-desktop:nys-grid-col-2">
     {% include "partials/section-nav.njk" %}
   </aside>
-  <div class="nys-desktop:nys-grid-col-8">  
-    {{ content | safe }}
+  <div class="nys-desktop:nys-grid-col-8">
+    {{ long_description }}
+    {{ content | md | safe }}
   </div>
   <aside class="nys-desktop:nys-grid-col-2">
     {% include "partials/onpage-nav.njk" %}

@@ -25,7 +25,13 @@ const components = require("./src/_11ty/collections/components");
 const sections = require("./src/_11ty/collections/sections");
 const tokens = require("./src/_11ty/collections/tokens");
 
+
 module.exports = (eleventyConfig) => {
+const markdownIt = require('markdown-it')({
+    html: true,
+    linkify: true,
+    typographer: false,
+});
 
     // filters
     eleventyConfig.addFilter("dateISO", dateISO);
@@ -68,6 +74,12 @@ module.exports = (eleventyConfig) => {
         execSync(`npx pagefind --site _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
     })
 
+  /* Markdown-It 'markdownify' filter
+   * source: https://github.com/BradCoffield/kidlitconnection/commit/e42a6dee1021be4b1869e4b62582230aed5db84e)
+  */
+eleventyConfig.addFilter("md", function (content = "") {
+  return markdownIt.renderInline(content);
+});
     // base config
     return {
         dir: {

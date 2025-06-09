@@ -1,23 +1,30 @@
 backend:
-  name: github
-  repo: esteinborn/nysds-site
+  # name: github
+  # repo: esteinborn/nysds-site
+  # branch: main
+  name: git-gateway
   branch: main
-  api_root: https://funny-torte-6c1658.netlify.app/.netlify/identity
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
 
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+public_folder: "/assets/img" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
+  - name: "component" # Used in routes, e.g., /admin/collections/blog
+    label: "Component" # Used in the UI
+    folder: "src/content/components" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Short Description", name: "description", widget: "string" }
+      - { label: "Long Description", name: "long_description", widget: "markdown" }
+      - { label: "Navigation Order", name: "navOrder", widget: "number" }
+      - { label: "image", name: "image", widget: "file" }
+      - { label: "code", name: "code", widget: "code" }
+      - { label: "Do", name: "do", widget: "markdown" }
+      - { label: "Dont", name: "dont", widget: "markdown" }
       - { label: "Body", name: "body", widget: "markdown" }
       
