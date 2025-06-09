@@ -16,6 +16,10 @@ description: An alert displays a prominent message, with optional links, at the
 image: /images/uploads/image-2-.png
 rating: 1
 ---
+
+{% extends "layouts/component.njk" %}
+
+
 {% block longdescription %}
 
 Alert banners are designed to display critical information, updates, or warnings that require the user's attention.
