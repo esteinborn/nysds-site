@@ -5,7 +5,7 @@ const eleventyPluginNavigation = require("@11ty/eleventy-navigation");
 const eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const { execSync } = require('child_process')
+const { execSync } = require('child_process');
 
 // filters
 const limit = require("./src/_11ty/filters/limit.js");
@@ -30,7 +30,8 @@ module.exports = (eleventyConfig) => {
 const markdownIt = require('markdown-it')({
     html: true,
     linkify: true,
-    typographer: false,
+    typographer: true,
+    breaks: false,
 });
 
     // filters
@@ -74,12 +75,13 @@ const markdownIt = require('markdown-it')({
         execSync(`npx pagefind --site _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
     })
 
-  /* Markdown-It 'markdownify' filter
-   * source: https://github.com/BradCoffield/kidlitconnection/commit/e42a6dee1021be4b1869e4b62582230aed5db84e)
-  */
-eleventyConfig.addFilter("md", function (content = "") {
-  return markdownIt.renderInline(content);
-});
+    /* Markdown-It 'markdownify' filter
+    * source: https://github.com/BradCoffield/kidlitconnection/commit/e42a6dee1021be4b1869e4b62582230aed5db84e)
+    */
+    eleventyConfig.addFilter("md", function (content = "") {
+        return markdownIt.render(content.trim());
+    });
+
     // base config
     return {
         dir: {
