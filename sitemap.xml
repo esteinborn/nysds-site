@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
             <loc>https://designsystem.ny.gov/components/alert/</loc>
-            <lastmod>2025-06-09T19:00:55.955Z</lastmod>
+            <lastmod>2025-06-17T16:10:41.028Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/components/avatar/</loc>
+            <lastmod>2025-06-17T16:10:41.028Z</lastmod>
             
               <changefreq>monthly</changefreq>
             
@@ -11,34 +20,7 @@
             
         </url><url>
             <loc>https://designsystem.ny.gov/about/</loc>
-            <lastmod>2025-06-09T19:00:55.955Z</lastmod>
-            
-              <changefreq>monthly</changefreq>
-            
-            
-              <priority>0.5</priority>
-            
-        </url><url>
-            <loc>https://designsystem.ny.gov/components/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
-            
-              <changefreq>monthly</changefreq>
-            
-            
-              <priority>0.5</priority>
-            
-        </url><url>
-            <loc>https://designsystem.ny.gov/foundations/accessibility/digital-experiences/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
-            
-              <changefreq>monthly</changefreq>
-            
-            
-              <priority>0.5</priority>
-            
-        </url><url>
-            <loc>https://designsystem.ny.gov/foundations/accessibility/documents/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
+            <lastmod>2025-06-17T16:10:41.028Z</lastmod>
             
               <changefreq>monthly</changefreq>
             
@@ -47,7 +29,7 @@
             
         </url><url>
             <loc>https://designsystem.ny.gov/foundations/accessibility/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
+            <lastmod>2025-06-17T16:10:41.028Z</lastmod>
             
               <changefreq>monthly</changefreq>
             
@@ -55,26 +37,8 @@
               <priority>0.5</priority>
             
         </url><url>
-            <loc>https://designsystem.ny.gov/foundations/accessibility/learn/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
-            
-              <changefreq>monthly</changefreq>
-            
-            
-              <priority>0.5</priority>
-            
-        </url><url>
-            <loc>https://designsystem.ny.gov/foundations/accessibility/legal/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
-            
-              <changefreq>monthly</changefreq>
-            
-            
-              <priority>0.5</priority>
-            
-        </url><url>
-            <loc>https://designsystem.ny.gov/foundations/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
+            <loc>https://designsystem.ny.gov/about/contact/</loc>
+            <lastmod>2025-06-17T16:10:41.028Z</lastmod>
             
               <changefreq>monthly</changefreq>
             
@@ -83,52 +47,7 @@
             
         </url><url>
             <loc>https://designsystem.ny.gov/foundations/tokens/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
-            
-              <changefreq>monthly</changefreq>
-            
-            
-              <priority>0.5</priority>
-            
-        </url><url>
-            <loc>https://designsystem.ny.gov/foundations/utilities/flex/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
-            
-              <changefreq>monthly</changefreq>
-            
-            
-              <priority>0.5</priority>
-            
-        </url><url>
-            <loc>https://designsystem.ny.gov/foundations/utilities/grid/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
-            
-              <changefreq>monthly</changefreq>
-            
-            
-              <priority>0.5</priority>
-            
-        </url><url>
-            <loc>https://designsystem.ny.gov/foundations/utilities/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
-            
-              <changefreq>monthly</changefreq>
-            
-            
-              <priority>0.5</priority>
-            
-        </url><url>
-            <loc>https://designsystem.ny.gov/foundations/utilities/typography/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
-            
-              <changefreq>monthly</changefreq>
-            
-            
-              <priority>0.5</priority>
-            
-        </url><url>
-            <loc>https://designsystem.ny.gov/foundations/utilities/utilities/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
             
               <changefreq>monthly</changefreq>
             
@@ -137,7 +56,7 @@
             
         </url><url>
             <loc>https://designsystem.ny.gov/getting-started/designers/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
             
               <changefreq>monthly</changefreq>
             
@@ -146,7 +65,61 @@
             
         </url><url>
             <loc>https://designsystem.ny.gov/getting-started/developers/</loc>
-            <lastmod>2025-06-09T19:00:55.956Z</lastmod>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/accessibility/digital-experiences/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/utilities/display/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/accessibility/documents/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/utilities/flexbox/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/utilities/float/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
             
               <changefreq>monthly</changefreq>
             
@@ -155,7 +128,7 @@
             
         </url><url>
             <loc>https://designsystem.ny.gov/getting-started/</loc>
-            <lastmod>2025-06-09T19:00:55.957Z</lastmod>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
             
               <changefreq>monthly</changefreq>
             
@@ -164,7 +137,52 @@
             
         </url><url>
             <loc>https://designsystem.ny.gov/</loc>
-            <lastmod>2025-06-09T19:00:55.957Z</lastmod>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/utilities/grid/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/accessibility/learn/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/accessibility/legal/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/utilities/margin-padding/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/utilities/opacity/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
             
               <changefreq>monthly</changefreq>
             
@@ -173,7 +191,52 @@
             
         </url><url>
             <loc>https://designsystem.ny.gov/privacy/</loc>
-            <lastmod>2025-06-09T19:00:55.957Z</lastmod>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/search/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/utilities/typography/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/utilities/</loc>
+            <lastmod>2025-06-17T16:10:41.029Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/components/</loc>
+            <lastmod>2025-06-17T16:10:41.030Z</lastmod>
+            
+              <changefreq>monthly</changefreq>
+            
+            
+              <priority>0.5</priority>
+            
+        </url><url>
+            <loc>https://designsystem.ny.gov/foundations/utilities/z-index/</loc>
+            <lastmod>2025-06-17T16:10:41.030Z</lastmod>
             
               <changefreq>monthly</changefreq>
             
