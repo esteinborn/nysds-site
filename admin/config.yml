@@ -3,7 +3,8 @@ backend:
   repo: esteinborn/nysds-site
   branch: main
   identity_url: https://auth.decapbridge.com/sites/e90c13a5-14bc-4877-b00a-ea7885d3cc63
-  gateway_url: https://gateway.decapbridge.com  # name: github
+  gateway_url: https://gateway.decapbridge.com
+  # name: github
   # repo: esteinborn/nysds-site
   # branch: main
   # name: git-gateway
@@ -14,7 +15,7 @@ backend:
 media_folder: "src/assets/img/components" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/assets/img/components" # The src attribute for uploaded media will begin with /images/uploads
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 collections:
   - name: "page" # Used in routes, e.g., /admin/collections/blog
