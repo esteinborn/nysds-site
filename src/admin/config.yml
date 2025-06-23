@@ -1,17 +1,15 @@
 backend:
-  # name: github
+  name: git-gateway
+  repo: esteinborn/nysds-site
+  branch: main
+  identity_url: https://auth.decapbridge.com/sites/e90c13a5-14bc-4877-b00a-ea7885d3cc63
+  gateway_url: https://gateway.decapbridge.com  # name: github
   # repo: esteinborn/nysds-site
   # branch: main
   # name: git-gateway
   # branch: main
 # Please run "npx netlify-cms-proxy-server" for local backend
 # local_backend: true
-
-  name: git-gateway
-  repo: esteinborn/nysds-site
-  branch: main
-  identity_url: https://auth.decapbridge.com/sites/e90c13a5-14bc-4877-b00a-ea7885d3cc63
-  gateway_url: https://gateway.decapbridge.com
   
 media_folder: "src/assets/img/components" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/assets/img/components" # The src attribute for uploaded media will begin with /images/uploads
