@@ -1,9 +1,9 @@
 backend:
-  # name: github
-  # repo: esteinborn/nysds-site
-  # branch: main
-  name: git-gateway
+  name: github
+  repo: esteinborn/nysds-site
   branch: main
+  # name: git-gateway
+  # branch: main
 # Please run "npx netlify-cms-proxy-server" for local backend
 # local_backend: true
 
